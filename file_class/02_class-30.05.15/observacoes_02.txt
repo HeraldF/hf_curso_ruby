@@ -1,0 +1,5 @@
+1 - Resolucao de atividades da aula 1
+
+2 - if; for; do ;or ; ||; do; end; 
+
+3 - Range
