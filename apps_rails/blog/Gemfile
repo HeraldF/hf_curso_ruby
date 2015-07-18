@@ -45,3 +45,4 @@ end
 
 gem 'therubyracer'
 gem 'pry-rails'
+gem 'bootstrap-sass'
