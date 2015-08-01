@@ -1,0 +1,7 @@
+<h1>Show Author</h1>
+
+<p>Name: <%= @author.name %></p>
+<p>Biografia: <%= @author.bio %></p>
+
+<%= link_to :Back, authors_path %>
+<%= link_to :Edit, edit_author_path(@author) %>

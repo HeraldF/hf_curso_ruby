@@ -1,23 +1,33 @@
 <h1>Lista de Autores</h1>
 
+<p><%= flash[:notice] %></p>
 
 <%= @authors.size %> Autores Cadastrados <br>
 
 <table>
 	<tr>
+		<th>ID</th>
 		<th>Nome</th>
 		<th>Biografia</th>	
 		<th>Registrado em</th>
+		<th>Option</th>
 	</tr>
 
 	<% @authors.each do |author| %>
 
 		<tr>
+			<td><%= author.id %></td>
 			<td> <%= author.name %> </td>
 			<td> <%= author.bio %> </td>
 			<td> <%= author.created_at %> </td>
+			<td><%= link_to "Edit", edit_author_path(author) %></td>
+			<td><%= link_to "Show", author_path(author) %></td>
+			<td><%= link_to "Delete", author_path(author), method: :delete, data: {confirm: "Want to actually delete this?"} %></td>
+
 		</tr>	
 
 	<% end %>
 	
 </table>
+
+<%= link_to("New Author", new_author_path) %>

@@ -44,5 +44,9 @@ group :development, :test do
 end
 
 gem 'therubyracer'
+=begin 
+'group: :(mode trabalho)' Serve para definir para qual modo
+de trabalho. Sendo eles TESTE; DESENVOLVIMENTO; e PRODUÇAO
+=end
 gem 'pry-rails'
 gem 'bootstrap-sass'
