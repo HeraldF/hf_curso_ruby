@@ -23,6 +23,7 @@
 			<td><%= link_to "Edit", edit_author_path(author) %></td>
 			<td><%= link_to "Show", author_path(author) %></td>
 			<td><%= link_to "Delete", author_path(author), method: :delete, data: {confirm: "Want to actually delete this?"} %></td>
+			<td><%= link_to "List Posts", post_author_path(author) %></td>
 
 		</tr>	
 

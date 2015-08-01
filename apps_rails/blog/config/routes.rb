@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   resources :posts
   resources :home, :only => [:index]
   resources :authors 
+
+  get "author/:id/posts" => "authors#posts", :as => "post_author"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
